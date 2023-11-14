@@ -1,0 +1,61 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: linear-gradient(135deg, #3494E6, #EC6EAD); /* Gradient background */
+}
+
+header {
+  background-color: #040303;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure proper box sizing */
+}
+
+.box {
+  position: relative;
+  width: calc(20% - 20px); /* Medium-sized box with 30% width */
+  background-color: #FFA500; /* Adjusted box color to Orange */
+  padding: 40px;
+  margin: 10px;
+  border: 1px solid #FF8C00; /* Darker Orange */
+  border-radius: 20px; /* Slightly rounded corners for a square shape */
+  text-align: center;
+  box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1); /* Box shadow */
+  transition: transform 0.3s, box-shadow 0.3s, min-height 0.3s; /* Added min-height transition */
+  min-height: 150px; /* Minimum height for the box */
+}
+
+.box:hover {
+  transform: scale(1.05); /* Increase size on hover */
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+  min-height: 100px; /* Increase height on hover */
+}
+
+.box img {
+  max-width: 100%;
+  height: auto; /* Allow the image to maintain its aspect ratio */
+  border-radius: 20px; /* Rounded corners for the image */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Image box shadow */
+}
+
+.box h2 {
+  color: #060404;
+}
+
+.box p {
+  color: #080606;
+}
+
+.box a {
+  color: #007BFF;
+}
